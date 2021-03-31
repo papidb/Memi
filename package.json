@@ -4,9 +4,10 @@
   "description": "FuanaDB with node",
   "main": "src/app.js",
   "scripts": {
+    "start": "nodemon",
     "test": "jest",
     "lint": "npm run lint:js ",
-    "lint:js": "eslint --ignore-path .gitignore"
+    "lint:js": "eslint"
   },
   "repository": {
     "type": "git",
@@ -26,8 +27,11 @@
   "homepage": "https://github.com/benjamin-daniel/Memi#readme",
   "dependencies": {
     "celebrate": "^14.0.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
     "express": "^4.17.1",
+    "method-override": "^3.0.0",
     "morgan": "^1.10.0",
     "reflect-metadata": "^0.1.13",
     "typedi": "^0.10.0",
